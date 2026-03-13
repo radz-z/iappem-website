@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Upcoming Events || IAP - PEM</title>
+        <title>Blogs/News list || IAP - PEM</title>
 
         <!-- responsive meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,9 +23,19 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
+        
+        <style>
+            .single-sidebar .popular-post li { 
+  padding-left: 2px;}
+        </style>
+        
 
     </head>
     <body>
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=202913784132486&autoLogAppEvents=1" nonce="PacEylwc"></script>
+        
+        
         <div class="boxed_wrapper">
 
             <!--Start Preloader -->
@@ -33,7 +43,7 @@
             <!--End Preloader --> 
 
             <!--Start header area-->
-  
+
             <!--Start top bar area-->
 <style>
     /* Nested submenu (second level) */
@@ -304,7 +314,7 @@
 
                                                 
 
-                                            <li><a href="#" >Committees</a></li>     
+                                            <li><a href="committees.html" >Committees</a></li>     
 
                                                 
 
@@ -451,7 +461,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="breadcrumbs">
-                                <h1>Upcoming Events</h1>
+                                <h1>Blogs/News</h1>
                             </div>
                         </div>
                     </div>
@@ -468,64 +478,91 @@
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
                                     <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                                    <li class="active">Upcoming Events</li>
+                                    <li class="active">Blogs/News</li>
                                 </ul>
                             </div>
-                                 
+
                         </div>
                     </div>
                 </div>
             </section>
             <!--End breadcrumb bottom area-->
 
-             
-             <br /><br />
-            <!--Start main event area-->
-            <div class="main-event-area">
+            <!--Start blog area-->
+            <section id="blog-area" class="blog-default-area">
                 <div class="container">
                     <div class="row">
-                        
-                                                
-                        <!--Start single item-->
-                        <div class="col-md-4">
-                            <div class="single-item">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="blog-post">
+                                <div class="row">
+                                    
+                                                                        
+                                    <!--Start single blog post-->
+                                    <div class="col-md-4"> 
+                            <div class="single-blog-item">
                                 <div class="img-holder">
-                                    <img src="images/4th-national-iappem-thumb.jpg" alt="4th IAPPEM National Conference (National Assembly on Paediatric Emergency Medicine) - NAPEM 2026" style="height: 240px;">
-                                    <div class="overlay-style-one">
-                                        <div class="box">
-                                            <div class="content">
-                                                <a href="past-events.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <img src="images/4th-national-iappem-thumb.jpg" alt="4th IAPPEM National Conference (National Assembly on Paediatric Emergency Medicine) - NAPEM 2026"> 
                                 </div>
                                 <div class="text-holder">
-                                    <div class="date-box">
-                                        <h3>27</h3>
-                                        <p>Mar 2026</p>
+                                    <ul class="meta-info">
+                                        <li><a href="past-events.html"_blank"">16 February, 2026</a></li> 
+                                    </ul>
+                                    <a href="past-events.html" target="_blank">
+                                        <h3 class="blog-title">4th IAPPEM National Conference (National Assembly on Paediatric Emergency Medicine) - NAPEM 2026</h3>
+                                    </a>
+                                    <div class="text">
+                                        <p>The 4th IAPPEM National Conference is scheduled to be held on March 27th–29th, 2026 in Hyderabad</p>
                                     </div>
-                                    <div class="text-box">
-                                        <h3>4th IAPPEM National Conference (National Assembly on Paediatric Emergency Medicine) - NAPEM 2026</h3>
-                                        <ul>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i>End On: 29 March 2026</li>
-                                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>Hyderabad</li>
-                                        </ul>
-                                    </div>    
+                                </div>    
+                            </div>    
+                        </div>
+                                    <!--End single blog post-->
+                                                                            
+                                    <!--Start single blog post-->
+                                    <div class="col-md-4"> 
+                            <div class="single-blog-item">
+                                <div class="img-holder">
+                                    <img src="images/newsdefault.jpg" alt="Announcement of Fellowship Exam"> 
                                 </div>
+                                <div class="text-holder">
+                                    <ul class="meta-info">
+                                        <li><a href="upload/Announcement-of-Felowship-exam-10-2025.pdf  target="_blank"">20 September, 2025</a></li> 
+                                    </ul>
+                                    <a href="upload/Announcement-of-Felowship-exam-10-2025.pdf" target="_blank">
+                                        <h3 class="blog-title">Announcement of Fellowship Exam</h3>
+                                    </a>
+                                    <div class="text">
+                                        <p>Exit exam 2024-2025 (PDCC Fellowship)</p>
+                                    </div>
+                                </div>    
+                            </div>    
+                        </div>
+                                    <!--End single blog post-->
+                                                                             
+
+                                </div>
+                                <!--Start post pagination-->
+                                <div class="row" style="display:none;">
+                                    <div class="col-md-12"> 
+                                        <ul class="post-pagination text-center">
+                                            <li><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
+                                            <li class="active"><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div> 
+                                </div>
+                                <!--End post pagination-->
                             </div>
                         </div>
-                        <!--End single item-->
-
-
-                                                   
+                         
                     </div>
-                </div>    
-            </div> 
-            
-            
-             
-            <!--End main event area--> 
- 
+                </div>
+            </section> 
+            <!--End blog area-->                                                                        
+
+
             
 
 <!--Start footer area-->  
@@ -871,5 +908,6 @@
 
 
     </body>
- 
+
+
 </html>
